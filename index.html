@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIGIWORM</title>
+    <script src="ola"></script>
+    <script src="https://kit.fontawesome.com/acd7670049.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/DIGI.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="loader"class="hidden">
+        <img src="img/paloma.png" alt="Loading...">
+      </div>
+    <header>
+        <a href="index.html" class="logo">
+            <img class="logo" src="img/DIGI.png" alt="Logo">
+          </a>
+        <nav class="head_titu">
+        
+           
+            <a href="" class="incioh">INICIO</a>
+            <a href="#sobreno">NOSOTROS</a>
+            <a href="formulario.html">INICIAR SESIÓN</a>
+            <a href="#portafolio">SERVICIOS</a>
+            <a href="#footer">CONTACTANOS</a>
+           
+
+        </nav>
+        <button id="toggle-nav" class="toggle-nav-btn">☰</button>
+
+        <section class="textos-header">
+            <h1 style='--content: "DIGI"; --star-color: #e53232; --end-color: #f1e314; --delay: 0s;'>DIGI</h1>
+            <h2 style='--content: "DIGIWORM"; --star-color: #32e55fd2; --end-color: #00ff6ad0; --delay: 0s; '>DIGIWORM</h2>
+
+        </section>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+         </div>
+    </header>
+    <main>
+        
+        <section class="clientes contenedor">
+            <h2 class="titulo">Nosotros</h2>
+            <div class="cards">
+                <div class="card" id="c2">
+                    <img src="img/bici.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        
+                        <p><br> estámos basados en la identidad institucional y las normas emanadas del Ministerio de Educación Nacional. </p>
+                    </div>
+                </div>
+                <div class="card" id="c3">
+                    <img src="img/R.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        
+                        <p>En la Media Integral con articulación con el SENA, ofrece el servicio público educativo en doble jornada.</p>
+                    </div>
+                </div>
+                <div class="card" id="c2">
+                    <img src="img/colegio_pablo_vi_en_kennedy.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        
+                        <p>así como las leyes y demás tratados vigentes en referencia a la normativa de educación en Colombia y de la Secretaría de Educación del Distrito.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+    <footer id="footer">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>digiworm04@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Instagram</h4>
+              
+                <a href="https://instagram.com/digiworm.s.a?igshid=NGExMmI2YTkyZg==" target="_blank"class="iconoinsta"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+           
+        </div>
+        <h2 class="titulo-final">&copy; Politica de privacidad |    <br>Que cada "No" que recibas<br> 
+              <br>  se convierta en un impulso para continuar.
+ </h2>
+    </footer>
+</body>
+<script>
+    // Ocultamos la pantalla de carga después de un cierto período de tiempo
+    window.addEventListener('load', function(){
+        const loader = document.getElementById('loader');
+        setTimeout(function(){
+            loader.classList.add('fadeOut');
+        }, 2000); // 2 segundos de tiempo de carga
+    });
+</script>
+<script>const toggleNavBtn = document.getElementById('toggle-nav');
+    const nav = document.querySelector('nav');
+    
+    toggleNavBtn.addEventListener('click', function() {
+      nav.classList.toggle('active');
+    });
+    </script>
+</html>
